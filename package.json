@@ -1,0 +1,16 @@
+{
+  "name": "movie-data-analytics-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "start": "concurrently -n \"backend,frontend\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "server": "cd backend && source venv/bin/activate && python3 main.py",
+    "client": "npm --prefix movie-analytics-dashboard run dev",
+    "build": "npm --prefix movie-analytics-dashboard run build",
+    "preview": "npm --prefix movie-analytics-dashboard run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

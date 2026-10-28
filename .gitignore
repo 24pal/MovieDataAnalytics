@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Python Virtual Environments & Bytecode
+backend/venv/
+venv/
+*/venv/
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Large MovieLens datasets and data files
+backend/data/*.zip
+backend/data/ml-25m/
+backend/data/ml-latest-small/
+backend/data/*.csv
+
+# Build outputs
+dist/
+*/dist/
+build/
+*.egg-info/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+*/.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo

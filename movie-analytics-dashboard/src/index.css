@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1e3a8a;
+  --color-primary-dark: #1e3a8a; /* darker shade optional */
+  --color-sidebar: #0f172a;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
